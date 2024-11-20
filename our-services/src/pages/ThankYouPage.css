@@ -1,0 +1,89 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;  /* Ensure it's on top of other content */
+  }
+  
+  /* Fixed Footer */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it's on top of other content */
+    text-align: center;
+  }
+.thank-you-container {
+    margin: 50px;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: medium;
+  }
+  
+  .thank-you-heading {
+    color: #f7961e;
+    
+    margin-top: 30px;
+  }
+  
+  .blue-text1 {
+    color: #40c63b;
+    margin-bottom: 25px;
+  }
+  
+  .patient-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 400px;
+    
+  }
+  
+  .detail-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .detail-label {
+    font-weight: bold;
+    flex: 1;
+    text-align: left;
+    color: #333;
+  }
+  
+  .detail-value {
+    flex: 2;
+    text-align: right;
+    color: #555;
+  }
+  
+  .back-to-home-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #684fa4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .back-to-home-btn:hover {
+    background-color: #f7961e;
+  }
+  

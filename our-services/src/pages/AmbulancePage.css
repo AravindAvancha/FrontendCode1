@@ -1,0 +1,208 @@
+/* Container Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;  /* Ensure it's on top of other content */
+}
+
+/* Fixed Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it's on top of other content */
+  text-align: center;
+}
+.services-heading{
+  margin-top: 60px;
+  padding: 0px;
+  margin-bottom: 5px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left Section (Patient Info) */
+.form-container {
+  width: 45%;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.form-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f39c12; /* Orange for heading */
+  margin-bottom: 20px;
+}
+
+/* Label Colors */
+.label-blue {
+  color: #684fa4; /* Blue for patient info labels */
+}
+
+.label-orange {
+  color: #f39c12; /* Orange for hospital search labels */
+}
+
+/* Input Fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.submit-btn,
+.emergency-btn,
+.find-hospitals-btn {
+  width: 50%;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: #684fa4;
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-left: 267px;
+  width: 135px;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background-color: #563a88;
+}
+
+/* Emergency Button */
+.emergency-btn1 {
+  background-color: #f31212;
+  width: 135px;
+  margin: 5px;
+  color: white;
+  font-size: 14px; /* Smaller font size */
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+  margin-left: 268px;
+  font-weight: bold;
+}
+
+.emergency-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Right Section (Find Hospital) */
+.right-side {
+  width: 45%;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.right-side h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #684fa4; /* Blue for heading */
+  margin-bottom: 20px;
+}
+
+/* Find Hospital Search Buttons */
+.find-hospitals-btn1 {
+  background-color: #f39c12;
+  width: 135px;
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px;  
+}
+
+.find-hospitals-btn:hover {
+  background-color: #cc9900;
+}
+
+/* Back Button */
+.back-button1 {
+  position: fixed;
+  top: 40px;
+  right: 60px;
+  color: #5836a7;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center; /* Vertically center icon and text */
+  gap: 5px; /* Adds spacing between icon and text */
+  margin-top: 40px;
+}
+
+.back-button1:hover {
+  color: #F7961E; /* Changes text and icon color to orange on hover */
+}
+
+.back-button1 i {
+  font-size: 20px; /* Icon size */
+}
+
+.back-button1::before {
+  margin-right: 8px;
+  font-size: 25px; /* Matches font size of text */
+  text-decoration: none !important; /* Explicitly remove underline from the arrow */
+}
+
+
+.use-location-btn {
+  background-color: #16a085;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+  
+}
+
+.use-location-btn:hover {
+  background-color: #1abc9c;
+}
+.bi-arrow-left {
+  color: rgb(255, 166, 0) !important;
+}
+.bi-arrow-left:hover {
+  color: #5836a7 !important;
+}

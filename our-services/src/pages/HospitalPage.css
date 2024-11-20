@@ -1,0 +1,146 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;  /* Ensure it's on top of other content */
+}
+
+/* Fixed Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it's on top of other content */
+  text-align: center;
+}
+.hospitals-container {
+  text-align: center;
+  padding: 20px;
+  position: relative; /* To make sure the button is positioned correctly */
+}
+
+/* Back Button */
+.back-button {
+  position: fixed;
+  top: 85px;
+  right: 60px;
+  color: #5836a7;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center; /* Aligns text and arrow vertically */
+  text-decoration: underline;
+}
+
+.back-button:hover {
+  color: #F7961E; /* Changes text color to orange on hover */
+}
+
+/* Heading styles */
+.services-heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.orange-text {
+  color: #f39c12;
+}
+
+.blue-text {
+  color: #684fa4;
+}
+
+h2 span {
+  font-weight: 700;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.blue-text p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* Grid for hospital cards */
+.hospitals-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Hospital card styles */
+.hospital-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px;
+  width: 279px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fbf9f9;
+}
+
+/* Image inside the hospital card */
+.hospital-image {
+  width: 90%;
+  height: 204px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensures the image fills the area without distortion */
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Hospital name styling */
+.hospital-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #684fa4; /* Blue color for hospital name */
+  margin: auto;
+  margin-bottom: 8px;
+}
+
+/* Hospital location styling */
+.hospital-location {
+  font-size: 14px;
+  color: #555;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+.hospital-card:hover {
+  transform: translateY(-10px); /* Slightly lifts the card */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Adds a soft shadow when hovering */
+}
+.bi-arrow-left {
+  color: rgb(255, 166, 0) !important;
+}
+.bi-arrow-left:hover {
+  color: #5836a7 !important;
+}
+.back-button i {
+  font-size: 20px; /* Icon size */
+}
+
+.back-button::before {
+  margin-right: 8px;
+  font-size: 25px; /* Matches font size of text */
+  text-decoration: none !important; /* Explicitly remove underline from the arrow */
+}

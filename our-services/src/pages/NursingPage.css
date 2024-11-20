@@ -1,0 +1,179 @@
+/* Fixed Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Fixed Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  text-align: center;
+}
+
+/* Image Gallery */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+/* Reduced image size for gallery */
+.nursing-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.nursing-text {
+  font-size: 12px; 
+  color: #91068c; /* Optional: sets a color for the text */
+ 
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* Card Styling */
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image */
+.card-image-container {
+  width: 60px; /* Reduced size */
+  height: 60px; /* Reduced size */
+  margin-bottom: 15px;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect for Card Image */
+.card:hover .card-image {
+  transform: scale(1.1);
+}
+
+/* Card Title */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Card Description */
+.card-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.about-nursing-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.about-nursing {
+  width: 50%; /* Adjust as needed */
+  padding: 20px;
+  text-align: left;
+  margin: 20px;
+  margin-left: 150px;
+}
+
+.about-title {
+  font-size: 1.5rem;
+  color: rgb(99, 7, 85);
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+.about-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+  font-family: Georgia, serif;
+}
+
+.about-list {
+  margin-top: 10px;
+  text-decoration: #333;
+  font-style: oblique;
+}
+
+.about-note {
+  font-size: 0.9rem;
+  color: #211c22;
+  margin-top: 15px;
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+.title {
+  margin-top: 15px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.small-icon {
+  font-size: 8px;
+  color: orange;
+}
+@media (max-width: 500px) {
+  .about-nursing-container {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .about-image-container {
+    margin-top: 50px;
+    width: 20%;
+    max-width: 50px;
+    height: 20px;
+  }
+}

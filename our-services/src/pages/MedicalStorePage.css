@@ -1,0 +1,103 @@
+/* Styling for the Medical Store Page */
+.medical-store-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.highlight-text {
+  color: orange;
+}
+
+.sub-text {
+  color: #684FA4;
+}
+
+.description-text {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.product-container {
+  display: flex;              /* Enable flexbox */
+  justify-content: center;    /* Center items horizontally */
+  align-items: center;        /* Center items vertically */
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  margin-top: 20px;           /* Add spacing from the top */
+}
+
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  /* Responsive grid */
+  gap: 20px;
+  justify-items: center;      /* Center each item inside the grid */
+}
+
+.item-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.item-card:hover {
+  transform: translateY(-10px);
+}
+
+.item-image {
+  width: 100%;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.item-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #684FA4;
+}
+
+.item-description {
+  font-size: 1rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+/* Remove underline from links in item cards */
+.item-link {
+  text-decoration: none;  /* Remove underline */
+  color: inherit;         /* Inherit color from the parent */
+}
+
+/* Back Button Styling */
+.back-button i {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it's on top of other content */
+  text-align: center;
+}
